@@ -1,0 +1,7 @@
+<h1>lifts#index</h1>
+
+<% @lifts.each do |lift| %>
+	<%= lift.liftname %>
+<% end %>
+
+<%= react_component 'Lifts', {data: @lifts } %>
